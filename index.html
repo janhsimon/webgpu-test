@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WebGPU Test</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- Prevent missing favicon error -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" type="module"></script>
+</head>
+
+<body onload="startWebGPU()">
+
+<!-- Vertical layout -->
+<div id="root">
+
+  <!-- Horizontal layout -->
+  <div id="titlebar">
+
+    <!-- Horizontal layout -->
+    <div id="titlebar-left">
+      <div id="logo"></div>
+      <div id="title">Company</div>
+    </div>
+
+    <div class="stretch"></div>
+
+    <!-- Horizontal layout -->
+    <div id="titlebar-center">
+      <div class="titlebar-spacer"></div>
+
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+
+      <div class="titlebar-spacer"></div>
+    </div>
+
+    <div class="stretch"></div>
+
+    <div id="titlebar-right"></div>
+  </div>
+
+  <div id="canvas-container">
+
+    <canvas id="canvas"></canvas>
+
+    <!-- Horizontal layout -->
+    <div id="overlay">
+
+      <!-- Vertical layout -->
+      <div class="sidebar-container">
+
+        <!-- Vertical layout -->
+        <div class="sidebar">
+          <div>
+            <button>
+              <div id="button-move"></div>
+            </button>
+            <button></button>
+            <button></button>
+          </div>
+
+          <div class="sidebar-spacer"></div>
+
+          <div>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+
+          <div class="stretch"></div>
+
+          <div>
+            <button>
+              <div id="button-settings"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="center"></div>
+
+      <!-- Vertical layout -->
+      <div class="sidebar-container">
+
+        <!-- Vertical layout -->
+        <div class="sidebar">
+          <div id="what">
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+
+          <div class="stretch"></div>
+
+          <div>
+            <button></button>
+            <button></button>
+          </div>
+
+          <div class="stretch"></div>
+
+          <div>
+            <button></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+</body>
+
+</html>

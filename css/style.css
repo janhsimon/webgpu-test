@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#titlebar {
+    background-color: #111;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+#titlebar-left {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    background: url("https://img.icons8.com/ios-filled/100/000000/push.png") no-repeat;
+    background-size: contain;
+    height: 64px;
+    width: 64px;
+    margin: auto 15px;
+}
+
+#title {
+    display: block;
+    font-family: "Helvetica", sans-serif;
+    font-size: 24pt;
+    color: white;
+    flex-grow: 1;
+    margin: auto 0;
+}
+
+#titlebar-center {
+    display: flex;
+    flex-direction: row;
+}
+
+.titlebar-spacer {
+    flex-grow: 1;
+}
+
+#titlebar-center button {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: auto 5px;
+    border: none;
+    border-radius: 16px;
+    background: #FFF2;
+    cursor: pointer;
+    padding: 16px;
+}
+
+#titlebar-right {
+    visibility: hidden;
+    width: 250px;
+}
+
+#canvas-container {
+    position: relative;
+    flex-grow: 1;
+}
+
+#canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar-container {
+    width: 80px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    background: #FFF3;
+    border-radius: 16px;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-spacer {
+    background: url("https://img.icons8.com/ios-filled/100/000000/ellipsis.png") no-repeat center;
+    background-size: contain;
+    height: 20px;
+}
+
+#center {
+    flex-grow: 1;
+}
+
+.sidebar button {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 16px;
+    background: #FFF6;
+    cursor: pointer;
+    padding: 16px;
+}
+
+button:hover {
+    background: #FFFA;
+}
+
+button:active {
+    background: #FFFC;
+}
+
+#button-move {
+    background: url("https://img.icons8.com/ios-filled/100/move.png") no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#button-settings {
+    background: url("https://img.icons8.com/ios-filled/100/000000/settings.png") no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.stretch {
+    flex-grow: 1;
+}
